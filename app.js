@@ -44,3 +44,20 @@ if(index == 0){
   sele.style.background = '#7FDBED';
 }
 }
+
+const nav = document.querySelector('nav')
+const btnOpen = document.querySelector('#open') 
+const btnClose = document.querySelector('#close')
+
+
+function open(){
+  nav.classList.add('active_menu')
+}
+
+function close(){
+  nav.classList.remove('active_menu')
+}
+
+
+btnOpen.addEventListener('click', open)
+btnClose.addEventListener('click', close)
